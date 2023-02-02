@@ -1,17 +1,17 @@
 ---
-title: "Um (quase) estatístico que atua com Inteligência Artificial no mercado de trabalho"
-subtitle: "  "
+title: "PersonaGPT"
+subtitle: "Inclusão de API da OpenAI para geração de textos do Rutilo"
 author: "Vítor Pereira"
-institute: "UFSM - CCNE | HartB Group"
+institute: "HartB Group"
 title-slide-attributes:
-  data-background-image: images/SAE_background.png
+  data-background-image: images/ml_background.png
   data-background-size: contain
   data-background-opacity: "0.2"
 format:
   revealjs:
     slide-number: c/t
     theme: default #dark
-    footer: "Ingresso no mercado de trabalho - SAE 2022 - [Vítor Pereira](https://github.com/VitorBSP)"
+    footer: "ChatGPT e Rutilo = <3"
     logo: "images/logo.png"
     smaller: True
 editor_options: 
@@ -23,580 +23,167 @@ editor_options:
 <hr/>
 
 <br/>
+<p>
 
-<br/>
-
-- Objetivo
+- Ideia
 
 <p>
 
-- Um pouco sobre mim e a HartB
+- Testes 
 
 <p>
 
-- 3 pilares para o desenvolvimento profissional 
-
-<p>
-
-- Caminho "Ótimo" e Diferença do Estatístico
-
-<p>
-
-- Materiais para Estudo
-
-::: footer
-Pesquisa Operacional :thumbsdown:
-:::
-
+- Teste na Estrutura da Api de Persona
 
 ## {auto-animate=true}
 
 ::: {style="margin-top: 200px; font-size: 3em; font-weight: bold;"}
-Objetivo
+Ideia
 :::
 
 
 ## {auto-animate=true}
 
 ::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
-Objetivo
+Ideia
 :::
 
 
 <hr/>
 <br/>
-<br/>
 
 <p>
 
-- **Motivá-los com o futuro como Estatísticos** 
+- Incluir o parente do ChatGPT (davinci003) no Rutilo
 
 <p>
 
-- **Motivá-los com o mercado de Trabalho**
-
-<p>
-
-- **Tentar ajudá-los a trilhar o caminho "ótimo"**
-
-<p>
-
-- **Falar sobre a intersecção entre Estatística e DS**
-
-## {auto-animate=true}
-
-::: {style="margin-top: 200px; font-size: 3em;  font-weight: bold;"}
-Um pouco sobre mim 
-:::
-
-
-## {auto-animate=true}
-
-::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
-Um pouco sobre mim
-:::
-
-
-<hr/>
-
-<br/>
-
-<br/>
-
-- Técnico em Informática pelo CTISM e Estatístico (quase)
-
-<p>
-
-- Minhas áreas favoritas na estatística são: Probabilidade, Inferência e Regressão
-
-<p>
-
-- Quero desenvolver soluções voltadas à Educação, Esporte e Saúde
-
-<p>
-
-- Fui bolsista de Desenvolvimento Web, Regressão e Séries Temporais
-
-## 
-
-::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
-Um pouco sobre mim
-:::
-
-<hr/>
-
-<br/>
-
-
-<p>
-
-- Trabalhei 4 anos na Recuperadora Roso
-
-<p>
-
-- Fui consultor e Diretor de Adm/Fin na Sigma Jr.
-
-<p>
-
-- Fui estagiário por 4 meses na CowMed
-
-<p>
-
-- Fui bolsista na Pró-Reitoria de Planejamento por 6 meses
-
-<p>
-
-- Sou Cientista de Dados Jr. na HartB
-
-## {auto-animate=true}
-
-::: {style="margin-top: 200px; font-size: 3em; font-weight: bold;"}
-Um pouco sobre a HartB
-:::
-
-
-## {auto-animate=true}
-
-::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
-Um pouco sobre a HartB
-:::
-
-<hr/>
-
-### Inovation as a Service
-
-
-<br/>
-
-<p>
-
-- Resolver problemas com Inteligência Artificial
-
-<p>
-
-- Foco em geração de valor através dos dados e soluções personalizadas
-
-<p>
-
-- Diversas equipes especializadas e focadas para a transformação das tomadas decisões
-
-<p>
-
-- Especialidade em: Big Data, Internet das Coisas, Análise de Dados e agora em Desenvolvimento de Software  
-
-
-## 
-
-::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
-Um pouco sobre a HartB
-:::
-
-<hr/>
-<br/>
-<br/>
-
-<center>
-![Alguns clientes da HartB](images/clientes.png){fig-align="center" width="1000"}
-</center>
-
-## 
-
-::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
-Um pouco sobre a HartB
-:::
-
-<hr/>
-
-<br/>
-
-<center>
-![Google for Startups Investimento, Aceleração, Treinamento e Produtos](images/google_startups.png){fig-align="center" width="500"}
-</center>
-
-## 
-
-::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
-Um pouco sobre a HartB
-:::
-
-<hr/>
-
-<center>
-![Uma nova parceria: HartB é a uma Start up do Ecossistema Google](images/google.png){fig-align="center" width="500"}
-</center>
-
-
-
-## 
-
-::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
-O que aprendi de novo
-:::
-
-<hr/>
-
-<br/>
-
-<p>
-
-- Estrutura de projetos em Equipe (CRISP-DM)
-
-<p>
-
-- GitLab
-
-<p>
-
-- **Rutilo**
-    - Conceito e criação de API
-
-    - Banco de Dados não relacional: Solr
-
-    - Programação Orientada à Objeto
-
-    - Arquitetura Limpa e Código Limpo
-
-## {auto-animate=true}
-
-::: {style="margin-top: 200px; font-size: 3em; font-weight: bold;"}
-3 pilares para o desenvolvimento profissional
-:::
-
-
-## {auto-animate=true}
-
-::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
-3 pilares para o desenvolvimento profissional
-:::
-
-<hr/>
-
-<br/>
-
-<br/>
-
+- Gera maior variabilidade e personalidade aos textos
 
 <p> 
 
-- Pilar 1: Sempre faça um pouco a mais (novo ou melhor)
+- Torna cada persona única e personalizada
 
 <p>
 
-- Pilar 2: "Se pode ser automatizado, deve ser automatizado!"
-
-<p>
-
-- Pilar 3: Network 
-
-## {auto-animate=true}
-
-::: {style="margin-top: 200px; font-size: 3em;"}
-Pilares 
-:::
-
-
-## {auto-animate=true}
-
-::: {style="margin-top: 10px; font-size: 2em;"}
-Pilar 1 
-:::
-
-#### Sempre faça um pouco a mais
-
-```{python}
-#| eval: true
-#| fig-align: center
-import plotly.graph_objects as go
-from easeimage.utils import io
-import pandas as pd
-
-languages = ['Portugol', 'HTML', 
-            'Portugol','HTML', 'C', 
-
-            'PHP', 'HTML', 'CSS', 
-            'PHP', 'JAVA', 'SQL',
-            
-            'PHP', 'JAVA SCRIPT', 'SQL',
-            'PHP', 'SQL', 'JAVA SCRIPT',
-            
-            'PHP',
-            'R', 
-            
-            'PYTHON',
-            'R',
-            
-            'R', 'PYTHON',
-            'R', 'PYTHON', 'SQL',
-            
-            'R',
-            'R', 'SQL',
-            
-            'R', 'PYTHON',
-            'PYTHON', 'JULIA', 'R', 
-            
-            'C', 'SCALA', 'C++']
-
-year = [2015.25, 2015.25,
-        2015.75, 2015.75, 2015.75,
-
-        2016.25, 2016.25, 2016.25,
-        2016.75, 2016.75, 2016.75,
-        
-        2017.25, 2017.25, 2017.25,
-        2017.75, 2017.75, 2017.75,
-
-        2018.25, 
-        2018.75,
-
-        2019.25, 
-        2019.75,
-        
-        2020.25, 2020.25,
-        2020.75, 2020.75, 2020.75,
-        
-        2021.25, 
-        2021.75, 2021.75,
-        
-        2022.25, 2022.25,
-        2022.75, 2022.75, 2022.75,
-        
-        2023.5, 2023.5, 2023.5]
-order = [3,2,
-        3,2,1,
-        3,2,1,
-        3,2,1,
-        3,2,1,
-        3,2,1,
-        3,
-        3,
-        3,
-        3,
-        3,2,
-        3,2,1,
-        3,
-        3,2,
-        3,2,
-        3,2,1,
-        3,2,1
-        ]
-
-df = pd.DataFrame({'order' : order, 
-                    'langs' : languages,
-                    'year' : year})
-
-df['order'] = df['order'].map({3 : 3, 2 :2.5, 1 : 2})
-cores_languages = {
-                    'Portugol' : "#F1BD07",
-                    'HTML' : '#DD4B25',
-                    'C' : "#6295CB",
-                    'PHP' : '#7377AD',
-                    'CSS' : '#254BDD',
-                    'JAVA' : '#E06C00',
-                    'SQL' : '#E01B23',
-                    'JAVA SCRIPT' : '#EFD81D',
-                    'R' : '#1E63AC',
-                    'PYTHON' : '#B48E00',
-                    'JULIA' : '#A575BB',
-                    'SCALA' : '#D73222',
-                    'C++' : '#15961B'
-                    }
-
-fig = go.Figure()
-for languages in df['langs'].unique():
-    fig.add_trace(go.Scatter(
-    x=df.query('langs == @languages')['year'],
-    y=df.query('langs == @languages')['order'],
-    name=languages, 
-    marker=dict(color=cores_languages[languages])))
-fig.update_traces(mode='markers', marker=dict(line_width=1, symbol='circle', size=32))
-fig.update_layout(
-    xaxis=dict(
-        showgrid=False,
-        showticklabels=True,
-    ),
-    margin=dict(l=40, r=40, b=0, t=40),
-    legend=dict(
-        font_size=10,
-        yanchor='top',
-        xanchor='left',
-    ),
-     title=dict(
-        text='Linguagens de programação estudadas ao longo dos anos<br>',
-        x=0.5,
-        y=0.95,
-        font=dict(
-            size=25,
-            color='#6295CB'
-        )),
-    paper_bgcolor='white',
-    plot_bgcolor='white',
-    hovermode='closest')
-fig.update_xaxes(
-    ticktext = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 'Futuro'],
-    tickvals = [2015.5, 2016.5, 2017.5, 2018.5, 2019.5, 2020.5, 2021.5, 2022.5, 2023.5],
-    anchor = 'free', position = 1,
-    tickfont_size = 18)
-fig.update_yaxes(
-    ticktext = ['Prioridade', 'Secundário', 'Útil'],
-    tickvals = [3, 2.5, 2])
-```
-
-
-## Pilar 2
-
-#### Se pode ser automatizado, deve ser automatizado
-
-<center>
-![Ferramentas para automatização de processos, exercícios e projetos](images/ferramentas.png){fig-align="center" width="1000"}
-</center>
-
-
-## Pilar 3 
-
-#### Network
-
-<p>
-
-![](images/sigma.png){fig-align="right" width="400"}
-
-<p> 
-
-- O Pilar 3 é naturalmente conquistado desenvolvendo os Pilares 1 e 2
-
-- Projetos realizados com capricho chamam a atenção das Pessoas
-
-- Conexão com as pessoas é a melhor forma de mostrar o seu desempenho
+- Implementação fácil (na API de Persona)
 
 
 ## {auto-animate=true}
 
 ::: {style="margin-top: 200px; font-size: 3em; font-weight: bold;"}
-Estatístico vs Cientista da Computação
+Testes
 :::
 
 
 ## {auto-animate=true}
 
 ::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
-Estatístico vs Cientista da Computação
+Testes
 :::
+
+
+<hr/>
+
+<p>
+
+- **Crie um texto sobre uma persona do sexo feminino, com ensino superior completo, com mais de 30 anos e interesse em computação.** 
+
+<p>
+
+- Alice é uma mulher com mais de 30 anos, que possui formação superior em computação. Ela é apaixonada por tecnologia e sempre está à procura de novas maneiras de usar a computação para simplificar e melhorar a vida das pessoas. Ela é extremamente criativa e tem um grande senso de inovação, o que a torna um ótimo líder para projetos tecnológicos. Ela acredita que a computação tem o potencial de mudar o mundo e trabalha duro para tornar isso uma realidade. Alice adora compartilhar seu conhecimento com outras pessoas, ensinando-lhes como usar os recursos da computação para melhorar suas vidas.
+
+## {auto-animate=true}
+
+::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
+Testes
+:::
+
+
+<hr/>
+
+<p>
+
+- **Crie um texto sobre uma persona do sexo feminino, com ensino médio completo, com mais de 35 anos, trabalha no varejo, com família sem imóveis ou carros, índice de vulnerabilidade social maior que 50 e interesses em bebês, beleza e saúde,  delivery e turismo.** 
+
+<p>
+
+- Maria é uma mulher de 35 anos que concluiu o ensino médio. Ela trabalha no varejo, mas sua família não tem imóveis ou carros. O índice de vulnerabilidade social de Maria é maior que 50. Maria tem interesses em bebês, beleza e saúde, delivery e turismo. Ela adora cuidar dos bebês e está sempre em busca de novos produtos para manter sua beleza e saúde. Além disso, ela também gosta de experimentar os serviços de delivery para provar diferentes pratos e também aproveita as viagens para conhecer novos destinos turísticos. Maria está sempre em busca de novas experiências e se esforça para manter sua família sempre unida. Ela acredita que a educação é a chave para um futuro melhor e por isso incentiva seus filhos a estudarem para alcançarem seus sonhos.
+
+
+## {auto-animate=true}
+
+::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
+Testes
+:::
+
 
 <hr/>
 
 
-<p> 
+<p>
 
-- Conhecimento da teoria e suposições dos modelos
+- **Crie um texto sobre uma persona de um homem com mais de 60 anos, nordestino de João Pessoa, com interesse em música, ensino superior completo e trabalhava com programação.** 
 
 <p>
 
-- Saber as implicações das violações das suposições e transformações dos modelos
-
-<p>
-
-- Geração de insights e geração de valores com os dados com rigor científico
-
-<p>
-
-- Conhecimento profundo de análise de dados desde descritiva até DL 
-
-<p>
-
-- Cientistas da Computação tem sido atraídos por Engenharia de Machine Learning e MLOPS
-
-## 
-
-::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
-Estatístico vs Cientista da Computação
-:::
-
-<center>
-![Processos que um estatístico deve conhecer](images/EDA.png){fig-align="center" width="600"}
-</center>
+- Seu nome é João, um homem de 61 anos, nascido e criado na cidade de João Pessoa, no Nordeste do Brasil. Seus pais trabalhavam como agricultores e lhe ensinaram desde cedo os valores da família e a importância da educação.João foi um estudante dedicado, concluiu seu ensino superior em Ciência da Computação com êxito e começou a trabalhar com programação. Além disso, João também tem uma grande paixão por música. Ele adora ouvir todos os tipos de gêneros musicais e aproveita qualquer oportunidade para tocar instrumentos musicais. Seu grande sonho é tocar em um show para amigos e familiares quando completar 70 anos. João também adora viajar para descobrir novos lugares e culturas, pois acredita que isso lhe dá uma visão mais ampla do mundo. Ele é uma pessoa calorosa e gentil que sempre está pronto para ajudar quem precisa.
 
 
 ## {auto-animate=true}
 
 ::: {style="margin-top: 200px; font-size: 3em; font-weight: bold;"}
-Caminho "Ótimo"
+Teste na Estrutura da Api de Persona
 :::
 
 
 ## {auto-animate=true}
 
 ::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
-Caminho "Ótimo"
+Teste na Estrutura da Api de Persona
 :::
 
-
 <hr/>
-
+<br/>
 <br/>
 
 
 
-- Em R:
-    - Projeto com Análise Descritiva apenas;
-    - Projeto com modelos simples de Machine Learning (Regressão Logística);
-    - Projeto com modelos mais complexos (Random Forest e XGBoost).
+##### Crie um texto sobre uma persona do sexo {sexo}, com {escolaridade}, com cerca de {idade} anos, trabalha como {profissao}, com {carros} carros e {imoveis} casas e se interessa por [interesses].  
 
-- Em Python:
-    - Refazer o Projeto do modelo simples;
-    - Refazer o Projeto do modelo complexo;
-    - Projeto com Web Scraping para Tratamento de dados.
+##### Crie um texto sobre uma persona do sexo {sexo}, com {escolaridade}, com cerca de {idade} anos, trabalha como {profissao}, com renda estimada {renda} salários mínimos e se interessa por [interesses].  
+
+##### Crie um texto sobre uma persona do sexo {sexo}, com {escolaridade}, com cerca de {idade} anos, trabalha como {profissao} e se interessa por [interesses].  
 
 
-"Falar é fácil, me mostre os ~~códigos~~ cursos"
-===============
+## {auto-animate=true}
 
-::: footer
-- Linus Torvalds, criador do Kernel Linux e Git
+::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
+Teste na Estrutura da Api de Persona
 :::
-
-
-## Cursos para Aprimoramento 
-<center>
-![Indicação de cursos](images/Cursos.png){fig-align="center" width="1000"}
-</center>
-
-
-## Outros materiais 
-
 <hr/>
+<br/>
+<br/>
 
-##### Básico:
+- Alice é uma mulher de 35 anos, com ensino médio completo. Ela trabalha como vendedora em uma loja de departamentos e não possui carro nem casa próprias. Alice é uma pessoa muito interessada por bebês, beleza e turismo. Ela adora passar seu tempo livre cuidando dos seus sobrinhos e visitando diferentes lugares para conhecer novas culturas. Ela também gosta de se cuidar e adora experimentar novos produtos de beleza para manter sua pele sempre saudável. Alice tem um sonho: um dia ela gostaria de ter a oportunidade de viajar ao redor do mundo para conhecer os mais variados países e culturas. Ela acredita que isso ajudaria a enriquecer seu conhecimento sobre o mundo e lhe permitiria ter experiências únicas que ela levaria consigo para sempre.
 
-- [Curso Introdutório de R com a Prof. Renata](https://www.youtube.com/watch?v=4aUgD4g21j8&list=PLcdqsDh9HZy3ZUqx-O616qSRrVnq3x7Yd&index=4)
+## {auto-animate=true}
 
-- [Curso Introdutório de LaTeX com a Prof. Renata](https://www.youtube.com/watch?v=w7lr_iAXBr4&list=PLcdqsDh9HZy2NQ7s9miob-rRBzbBBQOUD)
+::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
+Teste na Estrutura da Api de Persona
+:::
+<hr/>
+<br/>
+<br/>
 
-- [Análise Exploratória em Python com o Dr. Jodavid](https://www.youtube.com/watch?v=GK-7lGI9Sqk)
+- Seu nome é Ricardo, ele tem 50 anos e é marceneiro. Sempre teve um grande interesse por carros e tudo o que envolve mecânica. Ele trabalha como marceneiro há mais de 30 anos, ganhando cerca de 2 salários mínimos por mês. Com a chegada da pandemia, Ricardo se viu obrigado a se adaptar à nova realidade e passou a oferecer serviços de delivery para seus clientes. Ricardo foi para a escola até o ensino fundamental mas nunca teve tempo para estudar algo além disso. Apesar disso, ele sempre busca aprender coisas novas sobre mecânica e carros, lendo revistas especializadas e assistindo vídeos na internet. Ele é uma pessoa muito trabalhadora, dedicada a sua profissão e sempre disposto a ajudar quem precisa. Seu sonho é conseguir um bom emprego na área automotiva para poder desenvolver suas habilidades com carros e mecânica.
 
-- [Primeiros passos com R Markdown com o Prof. Thiago](https://www.youtube.com/watch?v=vdV1xHiwirI&t=86s)
+## {auto-animate=true}
 
-##### Intermediário:
-
-- [Noções de SQL e Tidyverse com a Me. Cátia e Dr. Magno](https://www.youtube.com/watch?v=vdV1xHiwirI&t=86s)
-
-- [WebScraping com R com o Dr. Jodavid](https://www.youtube.com/watch?v=oxsEIXeZjv8)
-
-
-##### Avançado
-
-- [Introdução ao PySpark com o Dr. Jonatas](https://www.youtube.com/watch?v=1-DZKTFK1EE)
-
-- [Introdução ao Aprendizado de Máquina com o Me. Douglas](https://colab.research.google.com/drive/1zwCMjGg5j5HqkwtIODuuLYerC3sAVpnV?usp=sharing)
-
-##### Reforçando a base
-
-- [Caminho para estudar estatística de maneira independente com Alisson](https://github.com/AlissonRP/FreeStats)
-
-- [Alguns projetos em Estatística e Ciência de Dados](https://github.com/VitorBSP?tab=repositories)
-
-# O poder dos dados é atingir o seu público para impactar mais pessoas!
-
-**Obrigado!**
-
-Qualquer dúvida estou disponível tanto aqui quanto nas redes sociais.
-
-
+::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
+Teste na Estrutura da Api de Persona
+:::
+<hr/>
+<br/>
+<br/>
+- João é um homem de 50 anos, que trabalha como marceneiro há mais de 20 anos. Ele é formado no ensino fundamental e tem orgulho de sua profissão. João gosta de carros e passa seu tempo livre cuidando do seu veículo, fazendo consertos e melhorias. Além disso, ele também se interessa por delivery e gosta de ajudar os amigos que trabalham neste setor. Mesmo com o passar dos anos, João mantém sua energia inalterada e sua paixão por carros continua a crescer dia após dia. Ele acredita que a vida é para ser vivida ao máximo, sempre buscando novas experiências e desafios. Por isso, ele não perde uma oportunidade para sair da rotina e embarcar em novas aventuras.
