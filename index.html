@@ -7,10 +7,10 @@
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.2.247">
+  <meta name="generator" content="quarto-1.1.251">
 
-  <meta name="author" content="Vítor Pereira">
-  <title>Um (quase) estatístico que atua com Inteligência Artificial no mercado de trabalho</title>
+  <meta name="author" content="Vítor Pereira Fábio Bayer">
+  <title>An approach to NDVI analysis: 2-D Kumaraswamy autoregressive moving average</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -318,487 +318,199 @@
       margin-right: 0; 
     }
   </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-  <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
-          <script type="text/javascript">
-          window.PlotlyConfig = {MathJaxConfig: 'local'};
-          if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
-          if (typeof require !== 'undefined') {
-          require.undef("plotly");
-          requirejs.config({
-              paths: {
-                  'plotly': ['https://cdn.plot.ly/plotly-2.16.1.min']
-              }
-          });
-          require(['plotly'], function(Plotly) {
-              window._Plotly = Plotly;
-          });
-          }
-          </script>
-          
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="images/SAE_background.png" data-background-opacity="0.2" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">Um (quase) estatístico que atua com Inteligência Artificial no mercado de trabalho</h1>
-
-<div class="quarto-title-authors">
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
-Vítor Pereira 
-</div>
-        <p class="quarto-title-affiliation">
-            UFSM - CCNE | HartB Group
-          </p>
-    </div>
-</div>
-
+<section id="title-slide" data-background-image="images/background.jpeg" data-background-opacity="0.2" data-background-size="contain" class="center">
+  <h1 class="title">An approach to NDVI analysis: 2-D Kumaraswamy autoregressive moving average</h1>
+  <p class="author">Vítor Pereira Fábio Bayer</p>
+  <p class="institute">UFSM - CCNE</p>
 </section>
+
 <section id="sumário" class="slide level2">
 <h2>Sumário</h2>
 <hr>
 <p><br></p>
-<p><br></p>
 <ul>
-<li>Objetivo</li>
+<li>Ideia</li>
 </ul>
 <p>
 </p><ul>
-<li>Um pouco sobre mim e a HartB</li>
+<li>O que é o NDVI?</li>
 </ul>
 <p>
 </p><ul>
-<li>3 pilares para o desenvolvimento profissional</li>
+<li>Por que desenvolver a 2D KARMA?</li>
 </ul>
 <p>
 </p><ul>
-<li>Caminho “Ótimo” e Diferença do Estatístico</li>
+<li>2D-ARMA</li>
 </ul>
 <p>
 </p><ul>
-<li>Materiais para Estudo</li>
+<li>Implementação</li>
 </ul>
-<div class="footer">
-<p>Pesquisa Operacional :thumbsdown:</p>
-</div>
+<p>
+</p><ul>
+<li>Próximos passos</li>
+</ul>
 </section>
 <section id="section" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 200px; font-size: 3em; font-weight: bold;">
-<p>Objetivo</p>
+<p>Ideia</p>
 </div>
 </section>
 <section id="section-1" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 10px; font-size: 2em; font-weight: bold;">
-<p>Objetivo</p>
+<p>Ideia</p>
 </div>
 <hr>
 <p><br> <br></p>
 <p>
 </p><ul>
-<li><strong>Motivá-los com o futuro como Estatísticos</strong></li>
+<li><strong>Modelar o índice NDVI utilizando toda a estrutura de correlação do processamento de imagens</strong></li>
 </ul>
 <p>
 </p><ul>
-<li><strong>Motivá-los com o mercado de Trabalho</strong></li>
+<li>Desenvolver uma nova abordagem para o 2D-ARMA</li>
 </ul>
 <p>
 </p><ul>
-<li><strong>Tentar ajudá-los a trilhar o caminho “ótimo”</strong></li>
+<li>Relacionar a estatística com o processamento de sinais</li>
 </ul>
 <p>
 </p><ul>
-<li><strong>Falar sobre a intersecção entre Estatística e DS</strong></li>
+<li>Realizar a detecção de bordas com o 2D-KARMA</li>
 </ul>
 </section>
 <section id="section-2" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
-<div style="margin-top: 200px; font-size: 3em;  font-weight: bold;">
-<p>Um pouco sobre mim</p>
+<div style="margin-top: 200px; font-size: 3em; font-weight: bold;">
+<p>O que é o NDVI?</p>
 </div>
 </section>
 <section id="section-3" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 10px; font-size: 2em; font-weight: bold;">
-<p>Um pouco sobre mim</p>
+<p>O que é o NDVI?</p>
 </div>
 <hr>
-<p><br></p>
-<p><br></p>
-<ul>
-<li>Técnico em Informática pelo CTISM e Estatístico (quase)</li>
+<p><br> <br></p>
+<p>
+</p><ul>
+<li>Índice de Vegetação com Diferença Normalizada (NDVI);</li>
 </ul>
 <p>
 </p><ul>
-<li>Minhas áreas favoritas na estatística são: Probabilidade, Inferência e Regressão</li>
+<li>O NDVI mede, de maneira geral, o verde na vegetação e sua a densidade.</li>
 </ul>
-<p>
-</p><ul>
-<li>Quero desenvolver soluções voltadas à Educação, Esporte e Saúde</li>
-</ul>
-<p>
-</p><ul>
-<li>Fui bolsista de Desenvolvimento Web, Regressão e Séries Temporais</li>
-</ul>
+<p><img data-src="images/ndvi.png" class="absolute" style="top: 350px; right: 225px; "></p>
 </section>
-<section id="section-4" class="slide level2">
-<h2></h2>
+<section id="section-4" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 10px; font-size: 2em; font-weight: bold;">
-<p>Um pouco sobre mim</p>
+<p>O que é o NDVI?</p>
 </div>
 <hr>
 <p><br></p>
 <p>
 </p><ul>
-<li>Trabalhei 4 anos na Recuperadora Roso</li>
+<li>O NDVI é obtido por sensoriamento remoto;</li>
 </ul>
 <p>
 </p><ul>
-<li>Fui consultor e Diretor de Adm/Fin na Sigma Jr.</li>
+<li>O NDVI analisa a condição da cultura desde a salinidade, nutrição, estado hídrico da cultura e do solo;</li>
 </ul>
 <p>
 </p><ul>
-<li>Fui estagiário por 4 meses na CowMed</li>
+<li>Assim uma queda no NDVI pode ser um sintoma de deterioração da saúde da planta;</li>
 </ul>
 <p>
 </p><ul>
-<li>Fui bolsista na Pró-Reitoria de Planejamento por 6 meses</li>
+<li>Uma imagem do NDVI considera a relação entre energia solar absorvida e refletida pela planta;</li>
 </ul>
 <p>
 </p><ul>
-<li>Sou Cientista de Dados Jr.&nbsp;na HartB</li>
+<li><span class="math inline">\(NDVI=\dfrac{NIR-RED}{NIR+RED}\)</span>, onde NIR é a Luz refletida na faixa infravermelha e RED é a Luz refletida na faixa vermelha</li>
 </ul>
 </section>
 <section id="section-5" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 200px; font-size: 3em; font-weight: bold;">
-<p>Um pouco sobre a HartB</p>
+<p>Por que desenvolver a 2D KARMA?</p>
 </div>
 </section>
 <section id="section-6" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 10px; font-size: 2em; font-weight: bold;">
-<p>Um pouco sobre a HartB</p>
-</div>
-<hr>
-<h3 id="inovation-as-a-service">Inovation as a Service</h3>
-<p><br></p>
-<p>
-</p><ul>
-<li>Resolver problemas com Inteligência Artificial</li>
-</ul>
-<p>
-</p><ul>
-<li>Foco em geração de valor através dos dados e soluções personalizadas</li>
-</ul>
-<p>
-</p><ul>
-<li>Diversas equipes especializadas e focadas para a transformação das tomadas decisões</li>
-</ul>
-<p>
-</p><ul>
-<li>Especialidade em: Big Data, Internet das Coisas, Análise de Dados e agora em Desenvolvimento de Software</li>
-</ul>
-</section>
-<section id="section-7" class="slide level2">
-<h2></h2>
-<div style="margin-top: 10px; font-size: 2em; font-weight: bold;">
-<p>Um pouco sobre a HartB</p>
-</div>
-<hr>
-<p><br> <br></p>
-<center>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/clientes.png" width="1000"></p>
-<p></p><figcaption>Alguns clientes da HartB</figcaption><p></p>
-</figure>
-</div>
-</center>
-</section>
-<section id="section-8" class="slide level2">
-<h2></h2>
-<div style="margin-top: 10px; font-size: 2em; font-weight: bold;">
-<p>Um pouco sobre a HartB</p>
-</div>
-<hr>
-<p><br></p>
-<center>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/google_startups.png" width="500"></p>
-<p></p><figcaption>Google for Startups Investimento, Aceleração, Treinamento e Produtos</figcaption><p></p>
-</figure>
-</div>
-</center>
-</section>
-<section id="section-9" class="slide level2">
-<h2></h2>
-<div style="margin-top: 10px; font-size: 2em; font-weight: bold;">
-<p>Um pouco sobre a HartB</p>
-</div>
-<hr>
-<center>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/google.png" width="500"></p>
-<p></p><figcaption>Uma nova parceria: HartB é a uma Start up do Ecossistema Google</figcaption><p></p>
-</figure>
-</div>
-</center>
-</section>
-<section id="section-10" class="slide level2">
-<h2></h2>
-<div style="margin-top: 10px; font-size: 2em; font-weight: bold;">
-<p>O que aprendi de novo</p>
+<p>Por que desenvolver a 2D KARMA?</p>
 </div>
 <hr>
 <p><br></p>
 <p>
 </p><ul>
-<li>Estrutura de projetos em Equipe (CRISP-DM)</li>
+<li>Tem como objetivo estudar e auxiliar na solução de um problema real (NDVI);</li>
 </ul>
 <p>
 </p><ul>
-<li>GitLab</li>
-</ul>
-<p>
-</p><ul>
-<li><strong>Rutilo</strong>
+<li>Poucos modelos estatísticos foram propostos para modelagem de dados em 2D;
 <ul>
-<li><p>Conceito e criação de API</p></li>
-<li><p>Banco de Dados não relacional: Solr</p></li>
-<li><p>Programação Orientada à Objeto</p></li>
-<li><p>Arquitetura Limpa e Código Limpo</p></li>
+<li>Gaussiana ou Simétrica (mais usuais);</li>
+<li>Rayleigh;</li>
+<li>Beta.</li>
 </ul></li>
 </ul>
+<p>
+</p><ul>
+<li>Distribuição específica para modelagem de dados e proporções com histórico para dados hidrológicos;</li>
+</ul>
+<p>
+</p><ul>
+<li>Apresenta características diferentes das outras distribuições com a modelagem sendo realizada pela mediana.</li>
+</ul>
 </section>
-<section id="section-11" class="slide level2" data-auto-animate="true">
+<section id="section-7" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 200px; font-size: 3em; font-weight: bold;">
-<p>3 pilares para o desenvolvimento profissional</p>
+<p>2D-ARMA</p>
 </div>
 </section>
-<section id="section-12" class="slide level2" data-auto-animate="true">
+<section id="section-8" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 10px; font-size: 2em; font-weight: bold;">
-<p>3 pilares para o desenvolvimento profissional</p>
+<p>2D-ARMA</p>
 </div>
 <hr>
 <p><br></p>
-<p><br></p>
 <p>
 </p><ul>
-<li>Pilar 1: Sempre faça um pouco a mais (novo ou melhor)</li>
-</ul>
-<p>
-</p><ul>
-<li>Pilar 2: “Se pode ser automatizado, deve ser automatizado!”</li>
-</ul>
-<p>
-</p><ul>
-<li>Pilar 3: Network</li>
+<li><p>Modelar e estudar imagens a partir de uma perspectiva estatística;</p></li>
+<li><p>A maioria das imagens a serem estudas (imagens de regiões geográficas) são naturalmente ricos em textura e nível de cinza;</p></li>
+<li><p>Nesses casos os modelos 2D ARMA tem se mostrado eficiente e possui parcimônia na definição dos parâmetros;</p></li>
+<li><p>Modela as imagens com abordagem de séries temporais, assim substituindo vetores (1D) por matrizes (2D).</p></li>
 </ul>
 </section>
-<section id="section-13" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title"></h2>
-<div style="margin-top: 200px; font-size: 3em;">
-<p>Pilares</p>
-</div>
-</section>
-<section id="section-14" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title"></h2>
-<div style="margin-top: 10px; font-size: 2em;">
-<p>Pilar 1</p>
-</div>
-<h4 id="sempre-faça-um-pouco-a-mais">Sempre faça um pouco a mais</h4>
-<div class="cell" data-execution_count="1">
-<div class="cell-output cell-output-display">
-
-<div>                            <div id="31af65f0-4fe7-4335-857c-e7747e58d0b1" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("31af65f0-4fe7-4335-857c-e7747e58d0b1")) {                    Plotly.newPlot(                        "31af65f0-4fe7-4335-857c-e7747e58d0b1",                        [{"marker":{"color":"#F1BD07","line":{"width":1},"size":32,"symbol":"circle"},"name":"Portugol","x":[2015.25,2015.75],"y":[3.0,3.0],"type":"scatter","mode":"markers"},{"marker":{"color":"#DD4B25","line":{"width":1},"size":32,"symbol":"circle"},"name":"HTML","x":[2015.25,2015.75,2016.25],"y":[2.5,2.5,2.5],"type":"scatter","mode":"markers"},{"marker":{"color":"#6295CB","line":{"width":1},"size":32,"symbol":"circle"},"name":"C","x":[2015.75,2023.5],"y":[2.0,3.0],"type":"scatter","mode":"markers"},{"marker":{"color":"#7377AD","line":{"width":1},"size":32,"symbol":"circle"},"name":"PHP","x":[2016.25,2016.75,2017.25,2017.75,2018.25],"y":[3.0,3.0,3.0,3.0,3.0],"type":"scatter","mode":"markers"},{"marker":{"color":"#254BDD","line":{"width":1},"size":32,"symbol":"circle"},"name":"CSS","x":[2016.25],"y":[2.0],"type":"scatter","mode":"markers"},{"marker":{"color":"#E06C00","line":{"width":1},"size":32,"symbol":"circle"},"name":"JAVA","x":[2016.75],"y":[2.5],"type":"scatter","mode":"markers"},{"marker":{"color":"#E01B23","line":{"width":1},"size":32,"symbol":"circle"},"name":"SQL","x":[2016.75,2017.25,2017.75,2020.75,2021.75],"y":[2.0,2.0,2.5,2.0,2.5],"type":"scatter","mode":"markers"},{"marker":{"color":"#EFD81D","line":{"width":1},"size":32,"symbol":"circle"},"name":"JAVA SCRIPT","x":[2017.25,2017.75],"y":[2.5,2.0],"type":"scatter","mode":"markers"},{"marker":{"color":"#1E63AC","line":{"width":1},"size":32,"symbol":"circle"},"name":"R","x":[2018.75,2019.75,2020.25,2020.75,2021.25,2021.75,2022.25,2022.75],"y":[3.0,3.0,3.0,3.0,3.0,3.0,3.0,2.0],"type":"scatter","mode":"markers"},{"marker":{"color":"#B48E00","line":{"width":1},"size":32,"symbol":"circle"},"name":"PYTHON","x":[2019.25,2020.25,2020.75,2022.25,2022.75],"y":[3.0,2.5,2.5,2.5,3.0],"type":"scatter","mode":"markers"},{"marker":{"color":"#A575BB","line":{"width":1},"size":32,"symbol":"circle"},"name":"JULIA","x":[2022.75],"y":[2.5],"type":"scatter","mode":"markers"},{"marker":{"color":"#D73222","line":{"width":1},"size":32,"symbol":"circle"},"name":"SCALA","x":[2023.5],"y":[2.5],"type":"scatter","mode":"markers"},{"marker":{"color":"#15961B","line":{"width":1},"size":32,"symbol":"circle"},"name":"C++","x":[2023.5],"y":[2.0],"type":"scatter","mode":"markers"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"showgrid":false,"showticklabels":true,"tickfont":{"size":18},"ticktext":[2015,2016,2017,2018,2019,2020,2021,2022,"Futuro"],"tickvals":[2015.5,2016.5,2017.5,2018.5,2019.5,2020.5,2021.5,2022.5,2023.5],"anchor":"free","position":1},"margin":{"l":40,"r":40,"b":0,"t":40},"legend":{"font":{"size":10},"yanchor":"top","xanchor":"left"},"title":{"font":{"size":25,"color":"#6295CB"},"text":"Linguagens de programa\u00e7\u00e3o estudadas ao longo dos anos<br>","x":0.5,"y":0.95},"paper_bgcolor":"white","plot_bgcolor":"white","hovermode":"closest","yaxis":{"ticktext":["Prioridade","Secund\u00e1rio","\u00datil"],"tickvals":[3,2.5,2]}},                        {"responsive": true}                    ).then(function(){
-                            
-var gd = document.getElementById('31af65f0-4fe7-4335-857c-e7747e58d0b1');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-</div>
-</div>
-</section>
-<section id="pilar-2" class="slide level2">
-<h2>Pilar 2</h2>
-<h4 id="se-pode-ser-automatizado-deve-ser-automatizado">Se pode ser automatizado, deve ser automatizado</h4>
-<center>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/ferramentas.png" width="1000"></p>
-<p></p><figcaption>Ferramentas para automatização de processos, exercícios e projetos</figcaption><p></p>
-</figure>
-</div>
-</center>
-</section>
-<section id="pilar-3" class="slide level2">
-<h2>Pilar 3</h2>
-<h4 id="network">Network</h4>
-<p>
-</p>
-<img data-src="images/sigma.png" width="400" class="r-stretch quarto-figure-right"><p>
-</p><ul>
-<li><p>O Pilar 3 é naturalmente conquistado desenvolvendo os Pilares 1 e 2</p></li>
-<li><p>Projetos realizados com capricho chamam a atenção das Pessoas</p></li>
-<li><p>Conexão com as pessoas é a melhor forma de mostrar o seu desempenho</p></li>
-</ul>
-</section>
-<section id="section-15" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title"></h2>
-<div style="margin-top: 200px; font-size: 3em; font-weight: bold;">
-<p>Estatístico vs Cientista da Computação</p>
-</div>
-</section>
-<section id="section-16" class="slide level2" data-auto-animate="true">
+<section id="section-9" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 10px; font-size: 2em; font-weight: bold;">
-<p>Estatístico vs Cientista da Computação</p>
-</div>
-<hr>
-<p>
-</p><ul>
-<li>Conhecimento da teoria e suposições dos modelos</li>
-</ul>
-<p>
-</p><ul>
-<li>Saber as implicações das violações das suposições e transformações dos modelos</li>
-</ul>
-<p>
-</p><ul>
-<li>Geração de insights e geração de valores com os dados com rigor científico</li>
-</ul>
-<p>
-</p><ul>
-<li>Conhecimento profundo de análise de dados desde descritiva até DL</li>
-</ul>
-<p>
-</p><ul>
-<li>Cientistas da Computação tem sido atraídos por Engenharia de Machine Learning e MLOPS</li>
-</ul>
-</section>
-<section id="section-17" class="slide level2">
-<h2></h2>
-<div style="margin-top: 10px; font-size: 2em; font-weight: bold;">
-<p>Estatístico vs Cientista da Computação</p>
-</div>
-<center>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/EDA.png" width="600"></p>
-<p></p><figcaption>Processos que um estatístico deve conhecer</figcaption><p></p>
-</figure>
-</div>
-</center>
-</section>
-<section id="section-18" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title"></h2>
-<div style="margin-top: 200px; font-size: 3em; font-weight: bold;">
-<p>Caminho “Ótimo”</p>
-</div>
-</section>
-<section id="section-19" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title"></h2>
-<div style="margin-top: 10px; font-size: 2em; font-weight: bold;">
-<p>Caminho “Ótimo”</p>
+<p>2D-ARMA</p>
 </div>
 <hr>
 <p><br></p>
-<ul>
-<li>Em R:
-<ul>
-<li>Projeto com Análise Descritiva apenas;</li>
-<li>Projeto com modelos simples de Machine Learning (Regressão Logística);</li>
-<li>Projeto com modelos mais complexos (Random Forest e XGBoost).</li>
-</ul></li>
-<li>Em Python:
-<ul>
-<li>Refazer o Projeto do modelo simples;</li>
-<li>Refazer o Projeto do modelo complexo;</li>
-<li>Projeto com Web Scraping para Tratamento de dados.</li>
-</ul></li>
+<p>
+</p><ul>
+<li><p>Modelar e estudar imagens a partir de uma perspectiva estatística;</p></li>
+<li><p>A maioria das imagens a serem estudas (imagens de regiões geográficas) são naturalmente ricos em textura e nível de cinza;</p></li>
+<li><p>Nesses casos os modelos 2D ARMA tem se mostrado eficiente e possui parcimônia na definição dos parâmetros;</p></li>
+<li><p>Modela as imagens com abordagem de séries temporais, assim substituindo vetores (1D) por matrizes (2D).</p></li>
 </ul>
-</section>
-<section>
-<section id="falar-é-fácil-me-mostre-os-códigos-cursos" class="title-slide slide level1 center">
-<h1>“Falar é fácil, me mostre os <del>códigos</del> cursos”</h1>
-<div class="footer">
-<ul>
-<li>Linus Torvalds, criador do Kernel Linux e Git</li>
-</ul>
-</div>
-</section>
-<section id="cursos-para-aprimoramento" class="slide level2">
-<h2>Cursos para Aprimoramento</h2>
-<center>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/Cursos.png" width="1000"></p>
-<p></p><figcaption>Indicação de cursos</figcaption><p></p>
-</figure>
-</div>
-</center>
-</section>
-<section id="outros-materiais" class="slide level2">
-<h2>Outros materiais</h2>
-<hr>
-<h5 id="básico">Básico:</h5>
-<ul>
-<li><p><a href="https://www.youtube.com/watch?v=4aUgD4g21j8&amp;list=PLcdqsDh9HZy3ZUqx-O616qSRrVnq3x7Yd&amp;index=4">Curso Introdutório de R com a Prof.&nbsp;Renata</a></p></li>
-<li><p><a href="https://www.youtube.com/watch?v=w7lr_iAXBr4&amp;list=PLcdqsDh9HZy2NQ7s9miob-rRBzbBBQOUD">Curso Introdutório de LaTeX com a Prof.&nbsp;Renata</a></p></li>
-<li><p><a href="https://www.youtube.com/watch?v=GK-7lGI9Sqk">Análise Exploratória em Python com o Dr.&nbsp;Jodavid</a></p></li>
-<li><p><a href="https://www.youtube.com/watch?v=vdV1xHiwirI&amp;t=86s">Primeiros passos com R Markdown com o Prof.&nbsp;Thiago</a></p></li>
-</ul>
-<h5 id="intermediário">Intermediário:</h5>
-<ul>
-<li><p><a href="https://www.youtube.com/watch?v=vdV1xHiwirI&amp;t=86s">Noções de SQL e Tidyverse com a Me. Cátia e Dr.&nbsp;Magno</a></p></li>
-<li><p><a href="https://www.youtube.com/watch?v=oxsEIXeZjv8">WebScraping com R com o Dr.&nbsp;Jodavid</a></p></li>
-</ul>
-<h5 id="avançado">Avançado</h5>
-<ul>
-<li><p><a href="https://www.youtube.com/watch?v=1-DZKTFK1EE">Introdução ao PySpark com o Dr.&nbsp;Jonatas</a></p></li>
-<li><p><a href="https://colab.research.google.com/drive/1zwCMjGg5j5HqkwtIODuuLYerC3sAVpnV?usp=sharing">Introdução ao Aprendizado de Máquina com o Me. Douglas</a></p></li>
-</ul>
-<h5 id="reforçando-a-base">Reforçando a base</h5>
-<ul>
-<li><p><a href="https://github.com/AlissonRP/FreeStats">Caminho para estudar estatística de maneira independente com Alisson</a></p></li>
-<li><p><a href="https://github.com/VitorBSP?tab=repositories">Alguns projetos em Estatística e Ciência de Dados</a></p></li>
-</ul>
-</section></section>
-<section id="o-poder-dos-dados-é-atingir-o-seu-público-para-impactar-mais-pessoas" class="title-slide slide level1 center">
-<h1>O poder dos dados é atingir o seu público para impactar mais pessoas!</h1>
-<p><strong>Obrigado!</strong></p>
-<p>Qualquer dúvida estou disponível tanto aqui quanto nas redes sociais.</p>
 
 <img src="images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
-<p>Ingresso no mercado de trabalho - SAE 2022 - <a href="https://github.com/VitorBSP">Vítor Pereira</a></p>
+<p>2D KARMA - TCC A - <a href="https://github.com/VitorBSP">Vítor Pereira</a></p>
 </div>
 </section>
     </div>
@@ -1050,24 +762,7 @@ if (outputEl) {{
         button.classList.add('code-copy-button-checked');
         var currentTitle = button.getAttribute("title");
         button.setAttribute("title", "Copied!");
-        let tooltip;
-        if (window.bootstrap) {
-          button.setAttribute("data-bs-toggle", "tooltip");
-          button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
-              customClass: "code-copy-button-tooltip",
-              offset: [0, -8]});
-          tooltip.show();    
-        }
         setTimeout(function() {
-          if (tooltip) {
-            tooltip.hide();
-            button.removeAttribute("data-bs-title");
-            button.removeAttribute("data-bs-toggle");
-            button.removeAttribute("data-bs-placement");
-          }
           button.setAttribute("title", currentTitle);
           button.classList.remove('code-copy-button-checked');
         }, 1000);
@@ -1105,42 +800,24 @@ if (outputEl) {{
           return note.innerHTML;
         });
       }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
-            };
-          } else {
-            return findCites(el.parentElement)
-          }
-        } else {
-          return undefined;
-        }
-      };
       var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
       for (var i=0; i<bibliorefs.length; i++) {
         const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
-              }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
+        const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+        tippyHover(ref, function() {
+          var popup = window.document.createElement('div');
+          cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
           });
-        }
+          return popup.innerHTML;
+        });
       }
     });
     </script>
