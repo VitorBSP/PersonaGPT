@@ -1,0 +1,602 @@
+---
+title: "Um (quase) estatístico que atua com Inteligência Artificial no mercado de trabalho"
+subtitle: "  "
+author: "Vítor Pereira"
+institute: "UFSM - CCNE | HartB Group"
+title-slide-attributes:
+  data-background-image: images/SAE_background.png
+  data-background-size: contain
+  data-background-opacity: "0.2"
+format:
+  revealjs:
+    slide-number: c/t
+    theme: default #dark
+    footer: "Ingresso no mercado de trabalho - SAE 2022 - [Vítor Pereira](https://github.com/VitorBSP)"
+    logo: "images/logo.png"
+    smaller: True
+editor_options: 
+  chunk_output_type: inline
+---
+
+## Sumário
+
+<hr/>
+
+<br/>
+
+<br/>
+
+- Objetivo
+
+<p>
+
+- Um pouco sobre mim e a HartB
+
+<p>
+
+- 3 pilares para o desenvolvimento profissional 
+
+<p>
+
+- Caminho "Ótimo" e Diferença do Estatístico
+
+<p>
+
+- Materiais para Estudo
+
+::: footer
+Pesquisa Operacional :thumbsdown:
+:::
+
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; font-weight: bold;"}
+Objetivo
+:::
+
+
+## {auto-animate=true}
+
+::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
+Objetivo
+:::
+
+
+<hr/>
+<br/>
+<br/>
+
+<p>
+
+- **Motivá-los com o futuro como Estatísticos** 
+
+<p>
+
+- **Motivá-los com o mercado de Trabalho**
+
+<p>
+
+- **Tentar ajudá-los a trilhar o caminho "ótimo"**
+
+<p>
+
+- **Falar sobre a intersecção entre Estatística e DS**
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em;  font-weight: bold;"}
+Um pouco sobre mim 
+:::
+
+
+## {auto-animate=true}
+
+::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
+Um pouco sobre mim
+:::
+
+
+<hr/>
+
+<br/>
+
+<br/>
+
+- Técnico em Informática pelo CTISM e Estatístico (quase)
+
+<p>
+
+- Minhas áreas favoritas na estatística são: Probabilidade, Inferência e Regressão
+
+<p>
+
+- Quero desenvolver soluções voltadas à Educação, Esporte e Saúde
+
+<p>
+
+- Fui bolsista de Desenvolvimento Web, Regressão e Séries Temporais
+
+## 
+
+::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
+Um pouco sobre mim
+:::
+
+<hr/>
+
+<br/>
+
+
+<p>
+
+- Trabalhei 4 anos na Recuperadora Roso
+
+<p>
+
+- Fui consultor e Diretor de Adm/Fin na Sigma Jr.
+
+<p>
+
+- Fui estagiário por 4 meses na CowMed
+
+<p>
+
+- Fui bolsista na Pró-Reitoria de Planejamento por 6 meses
+
+<p>
+
+- Sou Cientista de Dados Jr. na HartB
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; font-weight: bold;"}
+Um pouco sobre a HartB
+:::
+
+
+## {auto-animate=true}
+
+::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
+Um pouco sobre a HartB
+:::
+
+<hr/>
+
+### Inovation as a Service
+
+
+<br/>
+
+<p>
+
+- Resolver problemas com Inteligência Artificial
+
+<p>
+
+- Foco em geração de valor através dos dados e soluções personalizadas
+
+<p>
+
+- Diversas equipes especializadas e focadas para a transformação das tomadas decisões
+
+<p>
+
+- Especialidade em: Big Data, Internet das Coisas, Análise de Dados e agora em Desenvolvimento de Software  
+
+
+## 
+
+::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
+Um pouco sobre a HartB
+:::
+
+<hr/>
+<br/>
+<br/>
+
+<center>
+![Alguns clientes da HartB](images/clientes.png){fig-align="center" width="1000"}
+</center>
+
+## 
+
+::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
+Um pouco sobre a HartB
+:::
+
+<hr/>
+
+<br/>
+
+<center>
+![Google for Startups Investimento, Aceleração, Treinamento e Produtos](images/google_startups.png){fig-align="center" width="500"}
+</center>
+
+## 
+
+::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
+Um pouco sobre a HartB
+:::
+
+<hr/>
+
+<center>
+![Uma nova parceria: HartB é a uma Start up do Ecossistema Google](images/google.png){fig-align="center" width="500"}
+</center>
+
+
+
+## 
+
+::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
+O que aprendi de novo
+:::
+
+<hr/>
+
+<br/>
+
+<p>
+
+- Estrutura de projetos em Equipe (CRISP-DM)
+
+<p>
+
+- GitLab
+
+<p>
+
+- **Rutilo**
+    - Conceito e criação de API
+
+    - Banco de Dados não relacional: Solr
+
+    - Programação Orientada à Objeto
+
+    - Arquitetura Limpa e Código Limpo
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; font-weight: bold;"}
+3 pilares para o desenvolvimento profissional
+:::
+
+
+## {auto-animate=true}
+
+::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
+3 pilares para o desenvolvimento profissional
+:::
+
+<hr/>
+
+<br/>
+
+<br/>
+
+
+<p> 
+
+- Pilar 1: Sempre faça um pouco a mais (novo ou melhor)
+
+<p>
+
+- Pilar 2: "Se pode ser automatizado, deve ser automatizado!"
+
+<p>
+
+- Pilar 3: Network 
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em;"}
+Pilares 
+:::
+
+
+## {auto-animate=true}
+
+::: {style="margin-top: 10px; font-size: 2em;"}
+Pilar 1 
+:::
+
+#### Sempre faça um pouco a mais
+
+```{python}
+#| eval: true
+#| fig-align: center
+import plotly.graph_objects as go
+from easeimage.utils import io
+import pandas as pd
+
+languages = ['Portugol', 'HTML', 
+            'Portugol','HTML', 'C', 
+
+            'PHP', 'HTML', 'CSS', 
+            'PHP', 'JAVA', 'SQL',
+            
+            'PHP', 'JAVA SCRIPT', 'SQL',
+            'PHP', 'SQL', 'JAVA SCRIPT',
+            
+            'PHP',
+            'R', 
+            
+            'PYTHON',
+            'R',
+            
+            'R', 'PYTHON',
+            'R', 'PYTHON', 'SQL',
+            
+            'R',
+            'R', 'SQL',
+            
+            'R', 'PYTHON',
+            'PYTHON', 'JULIA', 'R', 
+            
+            'C', 'SCALA', 'C++']
+
+year = [2015.25, 2015.25,
+        2015.75, 2015.75, 2015.75,
+
+        2016.25, 2016.25, 2016.25,
+        2016.75, 2016.75, 2016.75,
+        
+        2017.25, 2017.25, 2017.25,
+        2017.75, 2017.75, 2017.75,
+
+        2018.25, 
+        2018.75,
+
+        2019.25, 
+        2019.75,
+        
+        2020.25, 2020.25,
+        2020.75, 2020.75, 2020.75,
+        
+        2021.25, 
+        2021.75, 2021.75,
+        
+        2022.25, 2022.25,
+        2022.75, 2022.75, 2022.75,
+        
+        2023.5, 2023.5, 2023.5]
+order = [3,2,
+        3,2,1,
+        3,2,1,
+        3,2,1,
+        3,2,1,
+        3,2,1,
+        3,
+        3,
+        3,
+        3,
+        3,2,
+        3,2,1,
+        3,
+        3,2,
+        3,2,
+        3,2,1,
+        3,2,1
+        ]
+
+df = pd.DataFrame({'order' : order, 
+                    'langs' : languages,
+                    'year' : year})
+
+df['order'] = df['order'].map({3 : 3, 2 :2.5, 1 : 2})
+cores_languages = {
+                    'Portugol' : "#F1BD07",
+                    'HTML' : '#DD4B25',
+                    'C' : "#6295CB",
+                    'PHP' : '#7377AD',
+                    'CSS' : '#254BDD',
+                    'JAVA' : '#E06C00',
+                    'SQL' : '#E01B23',
+                    'JAVA SCRIPT' : '#EFD81D',
+                    'R' : '#1E63AC',
+                    'PYTHON' : '#B48E00',
+                    'JULIA' : '#A575BB',
+                    'SCALA' : '#D73222',
+                    'C++' : '#15961B'
+                    }
+
+fig = go.Figure()
+for languages in df['langs'].unique():
+    fig.add_trace(go.Scatter(
+    x=df.query('langs == @languages')['year'],
+    y=df.query('langs == @languages')['order'],
+    name=languages, 
+    marker=dict(color=cores_languages[languages])))
+fig.update_traces(mode='markers', marker=dict(line_width=1, symbol='circle', size=32))
+fig.update_layout(
+    xaxis=dict(
+        showgrid=False,
+        showticklabels=True,
+    ),
+    margin=dict(l=40, r=40, b=0, t=40),
+    legend=dict(
+        font_size=10,
+        yanchor='top',
+        xanchor='left',
+    ),
+     title=dict(
+        text='Linguagens de programação estudadas ao longo dos anos<br>',
+        x=0.5,
+        y=0.95,
+        font=dict(
+            size=25,
+            color='#6295CB'
+        )),
+    paper_bgcolor='white',
+    plot_bgcolor='white',
+    hovermode='closest')
+fig.update_xaxes(
+    ticktext = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 'Futuro'],
+    tickvals = [2015.5, 2016.5, 2017.5, 2018.5, 2019.5, 2020.5, 2021.5, 2022.5, 2023.5],
+    anchor = 'free', position = 1,
+    tickfont_size = 18)
+fig.update_yaxes(
+    ticktext = ['Prioridade', 'Secundário', 'Útil'],
+    tickvals = [3, 2.5, 2])
+```
+
+
+## Pilar 2
+
+#### Se pode ser automatizado, deve ser automatizado
+
+<center>
+![Ferramentas para automatização de processos, exercícios e projetos](images/ferramentas.png){fig-align="center" width="1000"}
+</center>
+
+
+## Pilar 3 
+
+#### Network
+
+<p>
+
+![](images/sigma.png){fig-align="right" width="400"}
+
+<p> 
+
+- O Pilar 3 é naturalmente conquistado desenvolvendo os Pilares 1 e 2
+
+- Projetos realizados com capricho chamam a atenção das Pessoas
+
+- Conexão com as pessoas é a melhor forma de mostrar o seu desempenho
+
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; font-weight: bold;"}
+Estatístico vs Cientista da Computação
+:::
+
+
+## {auto-animate=true}
+
+::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
+Estatístico vs Cientista da Computação
+:::
+
+<hr/>
+
+
+<p> 
+
+- Conhecimento da teoria e suposições dos modelos
+
+<p>
+
+- Saber as implicações das violações das suposições e transformações dos modelos
+
+<p>
+
+- Geração de insights e geração de valores com os dados com rigor científico
+
+<p>
+
+- Conhecimento profundo de análise de dados desde descritiva até DL 
+
+<p>
+
+- Cientistas da Computação tem sido atraídos por Engenharia de Machine Learning e MLOPS
+
+## 
+
+::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
+Estatístico vs Cientista da Computação
+:::
+
+<center>
+![Processos que um estatístico deve conhecer](images/EDA.png){fig-align="center" width="600"}
+</center>
+
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; font-weight: bold;"}
+Caminho "Ótimo"
+:::
+
+
+## {auto-animate=true}
+
+::: {style="margin-top: 10px; font-size: 2em; font-weight: bold;"}
+Caminho "Ótimo"
+:::
+
+
+<hr/>
+
+<br/>
+
+
+
+- Em R:
+    - Projeto com Análise Descritiva apenas;
+    - Projeto com modelos simples de Machine Learning (Regressão Logística);
+    - Projeto com modelos mais complexos (Random Forest e XGBoost).
+
+- Em Python:
+    - Refazer o Projeto do modelo simples;
+    - Refazer o Projeto do modelo complexo;
+    - Projeto com Web Scraping para Tratamento de dados.
+
+
+"Falar é fácil, me mostre os ~~códigos~~ cursos"
+===============
+
+::: footer
+- Linus Torvalds, criador do Kernel Linux e Git
+:::
+
+
+## Cursos para Aprimoramento 
+<center>
+![Indicação de cursos](images/Cursos.png){fig-align="center" width="1000"}
+</center>
+
+
+## Outros materiais 
+
+<hr/>
+
+##### Básico:
+
+- [Curso Introdutório de R com a Prof. Renata](https://www.youtube.com/watch?v=4aUgD4g21j8&list=PLcdqsDh9HZy3ZUqx-O616qSRrVnq3x7Yd&index=4)
+
+- [Curso Introdutório de LaTeX com a Prof. Renata](https://www.youtube.com/watch?v=w7lr_iAXBr4&list=PLcdqsDh9HZy2NQ7s9miob-rRBzbBBQOUD)
+
+- [Análise Exploratória em Python com o Dr. Jodavid](https://www.youtube.com/watch?v=GK-7lGI9Sqk)
+
+- [Primeiros passos com R Markdown com o Prof. Thiago](https://www.youtube.com/watch?v=vdV1xHiwirI&t=86s)
+
+##### Intermediário:
+
+- [Noções de SQL e Tidyverse com a Me. Cátia e Dr. Magno](https://www.youtube.com/watch?v=vdV1xHiwirI&t=86s)
+
+- [WebScraping com R com o Dr. Jodavid](https://www.youtube.com/watch?v=oxsEIXeZjv8)
+
+
+##### Avançado
+
+- [Introdução ao PySpark com o Dr. Jonatas](https://www.youtube.com/watch?v=1-DZKTFK1EE)
+
+- [Introdução ao Aprendizado de Máquina com o Me. Douglas](https://colab.research.google.com/drive/1zwCMjGg5j5HqkwtIODuuLYerC3sAVpnV?usp=sharing)
+
+##### Reforçando a base
+
+- [Caminho para estudar estatística de maneira independente com Alisson](https://github.com/AlissonRP/FreeStats)
+
+- [Alguns projetos em Estatística e Ciência de Dados](https://github.com/VitorBSP?tab=repositories)
+
+# O poder dos dados é atingir o seu público para impactar mais pessoas!
+
+**Obrigado!**
+
+Qualquer dúvida estou disponível tanto aqui quanto nas redes sociais.
+
+
