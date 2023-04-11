@@ -1,0 +1,184 @@
+---
+title: "PersonaGPT"
+subtitle: "Inclusão de API da OpenAI para geração de textos do Rutilo"
+author: "Vítor Pereira"
+institute: "HartB Group"
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+editor_options: 
+  chunk_output_type: inline
+---
+
+
+```{python}
+import os
+import openai
+from dotenv import load_dotenv
+
+load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
+```
+
+# Introdução
+
+# Testando prompts e modelos
+
+## Prompt para sexo feminino, ensino médio completo, idade e interesse
+
+
+```{python}
+response = openai.Completion.create(
+                                    model="text-curie-001",
+                                    prompt="You: crie um texto sobre uma persona do sexo feminino, com ensino superior completo, com mais de 30 anos e interesse em computação.",
+                                    temperature=0.25,
+                                    max_tokens=1000,
+                                    top_p=1.0,
+                                    frequency_penalty=0.5,
+                                    presence_penalty=0.0,
+                                    stop=["You:"]
+                                    )
+persona_text = response.to_dict()
+persona_text['choices'][0]['text']
+```
+
+```{python}
+response = openai.ChatCompletion.create(
+                                    model="gpt-3.5-turbo",
+                                    messages=[{"role": "system", "content": "Você é o chat-gpt"},{"role": "user", "content": "You: crie um texto sobre uma persona do sexo feminino, com ensino superior completo, com mais de 30 anos e interesse em computação."}],
+                                    temperature=0.25,
+                                    max_tokens=1000,
+                                    top_p=1.0,
+                                    frequency_penalty=0.5,
+                                    presence_penalty=0.0,
+                                    )
+response.choices[0].message.content
+```
+
+
+
+## Prompt para sexo masculino, ensino superior completo, localidade e interesse
+
+
+```{python}
+response = openai.Completion.create(
+                                    model="text-curie-001",
+                                    prompt="Crie um texto sobre uma persona de um homem com mais de 60 anos, nordestino de João Pessoa, com interesse em música, ensino superior completo e trabalhava com programação.",
+                                    temperature=0.5,
+                                    max_tokens=1000,
+                                    top_p=1.0,
+                                    frequency_penalty=0.5,
+                                    presence_penalty=0.0,
+                                    stop=["You:"]
+                                    )
+persona_text = response.to_dict()
+persona_text['choices'][0]['text']
+```
+
+```{python}
+response = openai.ChatCompletion.create(
+                                    model="gpt-3.5-turbo",
+                                    messages=[{"role": "system", "content": "Você é o chat-gpt"},{"role": "user", "content": "Crie um texto sobre uma persona de um homem com mais de 60 anos, nordestino de João Pessoa, com interesse em música, ensino superior completo e trabalhava com programação."}],
+                                    temperature=0.25,
+                                    max_tokens=1000,
+                                    top_p=1.0,
+                                    frequency_penalty=0.5,
+                                    presence_penalty=0.0,
+                                    )
+response.choices[0].message.content
+```
+
+## Prompt para sexo feminino, ensino superior incompleto, idade, trabalho e interesse
+
+
+```{python}
+response = openai.Completion.create(
+                                    model="text-curie-001",
+                                    prompt="Chatgpt quero que você seja um escritor especialista em descrição de pessoas, então crie um texto sobre uma persona de uma mulher com mais de 20 anos, com interesse em música, casa e decoração, beleza e saúdade e alimentos e bebidas, ensino superior  incompleto e trabalha como telefonista",
+                                    temperature=0.5,
+                                    max_tokens=1000,
+                                    top_p=1.0,
+                                    frequency_penalty=0.5,
+                                    presence_penalty=0.0,
+                                    stop=["You:"]
+                                    )
+persona_text = response.to_dict()
+persona_text['choices'][0]['text']
+```
+
+```{python}
+response = openai.ChatCompletion.create(
+                                    model="gpt-3.5-turbo",
+                                    messages=[{"role": "system", "content": "Você é um escritor especialista em descrição de pessoas"},{"role": "user", "content": "Crie um texto sobre uma persona de uma mulher com mais de 20 anos, com interesse em música, casa e decoração, beleza e saúdade e alimentos e bebidas, ensino superior  incompleto e trabalha como telefonista"}],
+                                    temperature=0.25,
+                                    max_tokens=1000,
+                                    top_p=1.0,
+                                    frequency_penalty=0.5,
+                                    presence_penalty=0.0,
+                                    )
+response.choices[0].message.content
+```
+
+## Prompt para sexo masculino, nome, ensino superior incompleto, idade, trabalho, salário e interesse
+
+
+```{python}
+response = openai.Completion.create(
+                                    model="text-curie-001",
+                                    prompt="Quero que você seja um demógrafo especialista em descrição de pessoas, então crie um texto sobre uma persona de um homem chamado Vítor com 22 anos, com interesse em computação, eletrônicos, games e esporte e lazer, ensino superior incompleto, com salário de 2-4 salários mínimos e trabalha como cientista de dados.",
+                                    temperature=0.5,
+                                    max_tokens=1000,
+                                    top_p=1.0,
+                                    frequency_penalty=0.5,
+                                    presence_penalty=0.0,
+                                    stop=["You:"]
+                                    )
+persona_text = response.to_dict()
+persona_text['choices'][0]['text']
+```
+
+```{python}
+response = openai.ChatCompletion.create(
+                                    model="gpt-3.5-turbo",
+                                    messages=[{"role": "system", "content": "Você é um um demógrafo especialista em descrição de pessoas"},{"role": "user", "content": "Crie um texto sobre uma persona de um homem chamado Vítor com 22 anos, com interesse em computação, eletrônicos, games e esporte e lazer, ensino superior incompleto, com salário de 2-4 salários mínimos e trabalha como cientista de dados."}],
+                                    temperature=0.25,
+                                    max_tokens=1000,
+                                    top_p=1.0,
+                                    frequency_penalty=0.5,
+                                    presence_penalty=0.0,
+                                    )
+response.choices[0].message.content
+```
+
+## Prompt para sexo masculino, nome, ensino superior incompleto, idade, trabalho, salário e interesse
+
+
+```{python}
+response = openai.Completion.create(
+                                    model="text-curie-001",
+                                    prompt="Quero que você seja um demógrafo especialista em descrição de pessoas, então crie um texto sobre uma persona de um homem chamado Vítor com 22 anos, com interesse em computação, eletrônicos, games e esporte e lazer, ensino superior incompleto, com salário de 2-4 salários mínimos e trabalha como cientista de dados.",
+                                    temperature=0.5,
+                                    max_tokens=1000,
+                                    top_p=1.0,
+                                    frequency_penalty=0.5,
+                                    presence_penalty=0.0,
+                                    stop=["You:"]
+                                    )
+persona_text = response.to_dict()
+persona_text['choices'][0]['text']
+```
+
+```{python}
+response = openai.ChatCompletion.create(
+                                    model="gpt-3.5-turbo",
+                                    messages=[{"role": "system", "content": "Você é um um demógrafo especialista em descrição de pessoas"},{"role": "user", "content": "Crie um texto sobre uma persona de um homem chamado Vítor com 22 anos, com interesse em computação, eletrônicos, games e esporte e lazer, ensino superior incompleto, com salário de 2-4 salários mínimos e trabalha como cientista de dados."}],
+                                    temperature=0.5,
+                                    max_tokens=1000,
+                                    top_p=1.0,
+                                    frequency_penalty=0.5,
+                                    presence_penalty=0.0,
+                                    )
+response.choices[0].message.content
+```
